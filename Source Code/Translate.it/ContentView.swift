@@ -238,6 +238,8 @@ struct ContentView: View {
                     languageTranslation1 = "Bengali"
                 } else if languageTranslationPicker1 == 6 {
                     languageTranslation1 = "Catalan"
+                } else if languageTranslationPicker1 == 7 {
+                    languageTranslation1 = "Czech"
                 }
             }
                 .tag(1)
