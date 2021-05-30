@@ -107,6 +107,9 @@ struct ContentView: View {
                             }
                         }
                         .pickerStyle(MenuPickerStyle())
+                        .onChange(of: languageTranslationPicker1) { newValue in
+                        
+                        }
                         Spacer()
                         Picker(selection: $languageTranslationPicker2, label: Text("Language 2 - \(languageTranslation2)")) {
                             Group {
@@ -183,6 +186,9 @@ struct ContentView: View {
                             }
                         }
                         .pickerStyle(MenuPickerStyle())
+                        .onChange(of: languageTranslationPicker2) { newValue in
+                        
+                        }
                     }
                 }
                     .padding()

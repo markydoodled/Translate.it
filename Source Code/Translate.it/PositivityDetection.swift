@@ -6,10 +6,30 @@
 //
 
 import SwiftUI
+import CoreML
+import NaturalLanguage
 
 struct PositivityDetection: View {
+    init() {
+        UITextView.appearance().backgroundColor = .clear
+    }
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @State var positivityText = "Type Some Text..."
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    if horizontalSizeClass == .compact {
+        NavigationView {
+            VStack {
+                TextEditor(text: $positivityText)
+                    .foregroundColor(.white)
+                    .background(Color.secondary)
+                    .cornerRadius(10)
+                    .padding()
+            }
+            .navigationTitle("Positivity Detection")
+        }
+    } else {
+        Text("Hello World")
+    }
     }
 }
 
