@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8DEB5C6E45D13DA8073033B9 /* Pods_Translate_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBB50D57398DB705D4C1256 /* Pods_Translate_it.framework */; };
+		D531938826653479005A14CC /* PeoplePlacesOrganisationDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531938726653479005A14CC /* PeoplePlacesOrganisationDetection.swift */; };
+		D545285F2667BDE90080B35E /* TextSpeechClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545285E2667BDE90080B35E /* TextSpeechClassification.swift */; };
 		D549D08126601E1C00BEC18D /* Translate_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08026601E1C00BEC18D /* Translate_itApp.swift */; };
 		D549D08326601E1C00BEC18D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08226601E1C00BEC18D /* ContentView.swift */; };
 		D549D08526601E1E00BEC18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D549D08426601E1E00BEC18D /* Assets.xcassets */; };
 		D549D08826601E1E00BEC18D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D549D08726601E1E00BEC18D /* Preview Assets.xcassets */; };
 		D549D09026601E6500BEC18D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D549D08F26601E6500BEC18D /* Settings.bundle */; };
+		D554014A2664C3E400FAF503 /* PositivityDetection 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D55401492664C3E400FAF503 /* PositivityDetection 1.mlmodel */; };
 		D5F5FD8F2662B7350000C17A /* PositivityDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5FD8E2662B7350000C17A /* PositivityDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DE07418FCC97F015F68CBD7 /* Pods-Translate.it.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it.debug.xcconfig"; path = "Target Support Files/Pods-Translate.it/Pods-Translate.it.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEE6A324F93FE70405595C2 /* Pods-Translate.it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it.release.xcconfig"; path = "Target Support Files/Pods-Translate.it/Pods-Translate.it.release.xcconfig"; sourceTree = "<group>"; };
+		D531938726653479005A14CC /* PeoplePlacesOrganisationDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePlacesOrganisationDetection.swift; sourceTree = "<group>"; };
+		D545285E2667BDE90080B35E /* TextSpeechClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechClassification.swift; sourceTree = "<group>"; };
 		D549D07D26601E1C00BEC18D /* Translate.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D549D08026601E1C00BEC18D /* Translate_itApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate_itApp.swift; sourceTree = "<group>"; };
 		D549D08226601E1C00BEC18D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		D549D08726601E1E00BEC18D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D549D08926601E1E00BEC18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D549D08F26601E6500BEC18D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D55401492664C3E400FAF503 /* PositivityDetection 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "PositivityDetection 1.mlmodel"; sourceTree = "<group>"; };
 		D5F5FD8E2662B7350000C17A /* PositivityDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositivityDetection.swift; sourceTree = "<group>"; };
 		DFBB50D57398DB705D4C1256 /* Pods_Translate_it.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Translate_it.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,10 +72,13 @@
 				D549D08026601E1C00BEC18D /* Translate_itApp.swift */,
 				D549D08226601E1C00BEC18D /* ContentView.swift */,
 				D549D08426601E1E00BEC18D /* Assets.xcassets */,
+				D55401492664C3E400FAF503 /* PositivityDetection 1.mlmodel */,
 				D549D08926601E1E00BEC18D /* Info.plist */,
 				D549D08626601E1E00BEC18D /* Preview Content */,
 				D549D08F26601E6500BEC18D /* Settings.bundle */,
 				D5F5FD8E2662B7350000C17A /* PositivityDetection.swift */,
+				D531938726653479005A14CC /* PeoplePlacesOrganisationDetection.swift */,
+				D545285E2667BDE90080B35E /* TextSpeechClassification.swift */,
 			);
 			path = Translate.it;
 			sourceTree = "<group>";
@@ -231,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D531938826653479005A14CC /* PeoplePlacesOrganisationDetection.swift in Sources */,
 				D549D08326601E1C00BEC18D /* ContentView.swift in Sources */,
+				D554014A2664C3E400FAF503 /* PositivityDetection 1.mlmodel in Sources */,
 				D549D08126601E1C00BEC18D /* Translate_itApp.swift in Sources */,
+				D545285F2667BDE90080B35E /* TextSpeechClassification.swift in Sources */,
 				D5F5FD8F2662B7350000C17A /* PositivityDetection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
