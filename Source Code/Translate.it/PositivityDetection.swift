@@ -10,19 +10,18 @@ import CoreML
 import NaturalLanguage
 
 struct PositivityDetection: View {
-    init() {
-        UITextView.appearance().backgroundColor = .clear
-    }
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State var positivityText = "Type Some Text..."
     @State var detectedPositivity = "None"
     var body: some View {
     if horizontalSizeClass == .compact {
+        ScrollView {
             VStack {
                 TextEditor(text: $positivityText)
                     .foregroundColor(.white)
                     .background(Color.secondary)
                     .cornerRadius(10)
+                    .frame(height: 150)
                     .padding()
                 HStack {
                     Spacer()
@@ -34,6 +33,7 @@ struct PositivityDetection: View {
                 }
                 .padding()
             }
+    }
             .navigationTitle("Positivity Detection")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -48,11 +48,13 @@ struct PositivityDetection: View {
                 }
             }
     } else {
+        ScrollView {
         VStack {
             TextEditor(text: $positivityText)
                 .foregroundColor(.white)
                 .background(Color.secondary)
                 .cornerRadius(10)
+                .frame(height: 150)
                 .padding()
             HStack {
                 Spacer()
@@ -64,6 +66,7 @@ struct PositivityDetection: View {
             }
             .padding()
         }
+    }
         .navigationTitle("Positivity Detection")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
