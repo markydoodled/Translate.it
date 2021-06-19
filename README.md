@@ -27,4 +27,4 @@ pod install
 Any Suggestions?
 
 # Images
-Stay Tuned...
+[Click Here...](https://github.com/markydoodled/Translate.it/tree/main/Images)
