@@ -12,7 +12,7 @@ pod install
  - Open .xcworkspace file from here on in
 
 # Releases
-Stay Tuned...
+[Click Here...](https://github.com/markydoodled/Translate.it/releases)
 
 # Features
 - Text Language Detection
@@ -20,10 +20,11 @@ Stay Tuned...
 - Positivity Detection
 - Text Speech Classification
 - People, Places And Organistaion Detection
-
-# Features To Come
 - Smart Replies (iOS Only)
 - A macOS App
+
+# Features To Come
+Any Suggestions?
 
 # Images
 Stay Tuned...
