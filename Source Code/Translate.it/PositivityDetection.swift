@@ -33,6 +33,25 @@ struct PositivityDetection: View {
                 }
                 .padding()
             }
+            Spacer()
+            GroupBox {
+                VStack {
+                HStack {
+                    Spacer()
+                    Text("Detectable Moods")
+                        .bold()
+                        .font(.title3)
+                        .padding()
+                    Spacer()
+                }
+                    Text("Positive")
+                    Text("Negative")
+                    Text("Neutral")
+            }
+                .padding()
+            }
+            .padding()
+            Spacer()
     }
             .navigationTitle("Positivity Detection")
             .toolbar {
@@ -40,11 +59,13 @@ struct PositivityDetection: View {
                     Button(action: {analysePositivity()}) {
                         Image(systemName: "play.fill")
                     }
+                    .help("Start Detection")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {hideKeyboard()}) {
                         Image(systemName: "keyboard.chevron.compact.down")
                     }
+                    .help("Hide Keyboard")
                 }
             }
     } else {
@@ -66,6 +87,25 @@ struct PositivityDetection: View {
             }
             .padding()
         }
+            Spacer()
+            GroupBox {
+                VStack {
+                HStack {
+                    Spacer()
+                    Text("Detectable Moods")
+                        .bold()
+                        .font(.title3)
+                        .padding()
+                    Spacer()
+                }
+                    Text("Positive")
+                    Text("Negative")
+                    Text("Neutral")
+            }
+                .padding()
+            }
+            .padding()
+            Spacer()
     }
         .navigationTitle("Positivity Detection")
         .toolbar {
@@ -73,11 +113,13 @@ struct PositivityDetection: View {
                 Button(action: {analysePositivity()}) {
                     Image(systemName: "play.fill")
                 }
+                .help("Start Detection")
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {hideKeyboard()}) {
                     Image(systemName: "keyboard.chevron.compact.down")
                 }
+                .help("Hide Keyboard")
             }
         }
     }

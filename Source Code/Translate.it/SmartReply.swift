@@ -1,20 +1,20 @@
 //
-//  TextSpeechClassification.swift
+//  SmartReply.swift
 //  Translate.it
 //
-//  Created by Mark Howard on 02/06/2021.
+//  Created by Mark Howard on 13/06/2021.
 //
 
 import SwiftUI
-import NaturalLanguage
+import MLKitSmartReply
 
-struct TextSpeechClassification: View {
+struct SmartReplys: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State var text = "Type Some Text..."
-    @State var speechResults = "Speech Classification Results"
+    @State var smartReplyResults = "Smart Reply Results"
     var body: some View {
         if horizontalSizeClass == .compact {
-            ScrollView {
+           ScrollView {
             VStack {
                 TextEditor(text: $text)
                     .foregroundColor(.white)
@@ -27,7 +27,7 @@ struct TextSpeechClassification: View {
                     VStack {
                         ScrollView {
                         HStack {
-                Text("\(speechResults)")
+                Text("\(smartReplyResults)")
                     .font(.title3)
                     .foregroundColor(.white)
                             Spacer()
@@ -43,57 +43,50 @@ struct TextSpeechClassification: View {
                 Spacer()
                 GroupBox {
                     VStack {
-                        Group {
                     HStack {
                         Spacer()
-                        Text("Detectable Language Features")
+                        Text("Smart Reply Features")
                             .bold()
                             .font(.title3)
                             .padding()
                         Spacer()
                     }
-                        Text("Nouns")
-                        Text("Verbs")
-                        Text("Adjectives")
-                        Text("Adverbs")
-                        Text("Pronouns")
-                        Text("Determiner")
-                        Text("Particle")
-                        }
-                        Group {
-                        Text("Preposition")
-                        Text("Number")
-                        Text("Conjunction")
-                        Text("Interjection")
-                        Text("Classifier")
-                        Text("Idiom")
-                        Text("Other Words")
-                        }
+                        Text("Generate Reply's To Messages On-Device Using Machine Learning.")
                 }
                     .padding()
                 }
                 .padding()
                 Spacer()
         }
-            .navigationTitle("Speech Classification")
+            .navigationTitle("Smart Reply")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {let text = text
-                        speechResults = ""
-                            let tagger = NLTagger(tagSchemes: [.lexicalClass])
-                            tagger.string = text
-                            let options: NLTagger.Options = [.omitPunctuation, .omitWhitespace]
-                        tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .lexicalClass, options: options) { tag, tokenRange in
-                                if let tag = tag {
-                                    speechResults += "\(text[tokenRange]) - \(tag.rawValue) \n"
-                                    print("\(text[tokenRange]): \(tag.rawValue)")
-                                }
-                                return true
+                    Button(action: {var conversation: [TextMessage] = []
+                            let message = TextMessage(
+                                text: text,
+                                timestamp: Date().timeIntervalSince1970,
+                                userID: "userId",
+                                isLocalUser: false)
+                            conversation.append(message)
+                        SmartReply.smartReply().suggestReplies(for: conversation) { result, error in
+                            guard error == nil, let result = result else {
+                                return
                             }
+                            if (result.status == .notSupportedLanguage) {
+                                smartReplyResults = "Not A Supported Language"
+                            } else if (result.status == .success) {
+                                smartReplyResults = ""
+                                for suggestion in result.suggestions {
+                                    smartReplyResults += "\(suggestion.text)\n"
+                                }
+                            } else if (result.status == .noReply) {
+                                smartReplyResults = "No Suitable Reply Can Be Suggested"
+                            }
+                        }
                     }) {
                         Image(systemName: "play.fill")
                     }
-                    .help("Start Detection")
+                    .help("Start Reply")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {hideKeyboard()}) {
@@ -103,7 +96,7 @@ struct TextSpeechClassification: View {
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {let pasteboard = UIPasteboard.general
-                        pasteboard.string = speechResults
+                        pasteboard.string = smartReplyResults
                     }) {
                         Image(systemName: "doc.on.doc")
                     }
@@ -123,7 +116,7 @@ struct TextSpeechClassification: View {
                     VStack {
                         ScrollView {
                         HStack {
-                Text("\(speechResults)")
+                Text("\(smartReplyResults)")
                     .font(.title3)
                     .foregroundColor(.white)
                             Spacer()
@@ -139,57 +132,50 @@ struct TextSpeechClassification: View {
                 Spacer()
                 GroupBox {
                     VStack {
-                        Group {
                     HStack {
                         Spacer()
-                        Text("Detectable Language Features")
+                        Text("Smart Reply Features")
                             .bold()
                             .font(.title3)
                             .padding()
                         Spacer()
                     }
-                        Text("Nouns")
-                        Text("Verbs")
-                        Text("Adjectives")
-                        Text("Adverbs")
-                        Text("Pronouns")
-                        Text("Determiner")
-                        Text("Particle")
-                        }
-                        Group {
-                        Text("Preposition")
-                        Text("Number")
-                        Text("Conjunction")
-                        Text("Interjection")
-                        Text("Classifier")
-                        Text("Idiom")
-                        Text("Other Words")
-                        }
+                        Text("Generate Reply's To Messages On-Device Using Machine Learning.")
                 }
                     .padding()
                 }
                 .padding()
                 Spacer()
         }
-            .navigationTitle("Speech Classification")
+            .navigationTitle("Smart Reply")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {let text = text
-                        speechResults = ""
-                            let tagger = NLTagger(tagSchemes: [.lexicalClass])
-                            tagger.string = text
-                            let options: NLTagger.Options = [.omitPunctuation, .omitWhitespace]
-                        tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .lexicalClass, options: options) { tag, tokenRange in
-                                if let tag = tag {
-                                    speechResults += "\(text[tokenRange]) - \(tag.rawValue) \n"
-                                    print("\(text[tokenRange]): \(tag.rawValue)")
-                                }
-                                return true
+                    Button(action: {var conversation: [TextMessage] = []
+                            let message = TextMessage(
+                                text: text,
+                                timestamp: Date().timeIntervalSince1970,
+                                userID: "userId",
+                                isLocalUser: false)
+                            conversation.append(message)
+                        SmartReply.smartReply().suggestReplies(for: conversation) { result, error in
+                            guard error == nil, let result = result else {
+                                return
                             }
+                            if (result.status == .notSupportedLanguage) {
+                                smartReplyResults = "Not A Supported Language"
+                            } else if (result.status == .success) {
+                                smartReplyResults = ""
+                                for suggestion in result.suggestions {
+                                    smartReplyResults += "\(suggestion.text)\n"
+                                }
+                            } else if (result.status == .noReply) {
+                                smartReplyResults = "No Suitable Reply Can Be Suggested"
+                            }
+                        }
                     }) {
                         Image(systemName: "play.fill")
                     }
-                    .help("Start Detection")
+                    .help("Start Reply")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {hideKeyboard()}) {
@@ -199,7 +185,7 @@ struct TextSpeechClassification: View {
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {let pasteboard = UIPasteboard.general
-                        pasteboard.string = speechResults
+                        pasteboard.string = smartReplyResults
                     }) {
                         Image(systemName: "doc.on.doc")
                     }
@@ -210,8 +196,8 @@ struct TextSpeechClassification: View {
     }
 }
 
-struct TextSpeechClassification_Previews: PreviewProvider {
+struct SmartReply_Previews: PreviewProvider {
     static var previews: some View {
-        TextSpeechClassification()
+        SmartReplys()
     }
 }

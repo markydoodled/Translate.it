@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyTranslate",
+        "repositoryURL": "https://github.com/cpageler93/SwiftyTranslate",
+        "state": {
+          "branch": null,
+          "revision": "96e6faf61cc6d7fbd65620c02ba1e081985f6a00",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

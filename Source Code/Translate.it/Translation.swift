@@ -16,7 +16,7 @@ struct Translation: View {
     @AppStorage("sourceLanguage") var sourceLanguage = TranslateLanguage.afrikaans
     @AppStorage("destinationLanguage") var destinationLanguage = TranslateLanguage.afrikaans
     @State var languageTranslationText = "Type Some Text..."
-    @State var translationResults = "Language Translation"
+    @State var translationResults = "Language Translation Results"
     @State var showingDownloading = false
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     var body: some View {
@@ -566,8 +566,95 @@ struct Translation: View {
                     }
                     .groupBoxStyle(BlueGroupBox())
                     .padding()
-                    .frame(minHeight: 0, maxHeight: 350)
+                    .frame(minHeight: 150, maxHeight: 350)
                 }
+                Spacer()
+                GroupBox {
+                    VStack {
+                        Group {
+                        HStack {
+                            Spacer()
+                            Text("Detectable Languages")
+                                .bold()
+                                .font(.title3)
+                                .padding()
+                            Spacer()
+                        }
+                            Text("Afrikaans")
+                            Text("Arabic")
+                            Text("Belarusian")
+                            Text("Bulgarian")
+                            Text("Bengali")
+                            Text("Catalan")
+                            Text("Czech")
+                            Text("Welsh")
+                            Text("Danish")
+                        }
+                            Group {
+                            Text("German")
+                            Text("Greek")
+                            Text("English")
+                                Text("Esperanto")
+                                Text("Spanish")
+                                Text("Estonian")
+                                Text("Persian")
+                                Text("Finnish")
+                                Text("French")
+                                Text("Irish")
+                            }
+                        Group {
+                                Text("Galician")
+                            Text("Gujarati")
+                            Text("Hebrew")
+                            Text("Hindi")
+                            Text("Croatian")
+                            Text("Haitian")
+                            Text("Hungarian")
+                            Text("Indonesian")
+                            Text("Icelandic")
+                            Text("Italian")
+                        }
+                        Group {
+                            Text("Japanese")
+                            Text("Georgian")
+                            Text("Kannada")
+                            Text("Korean")
+                            Text("Lithuanian")
+                            Text("Latvian")
+                            Text("Macedonian")
+                            Text("Marathi")
+                            Text("Malay")
+                            Text("Maltese")
+                        }
+                        Group {
+                            Text("Dutch")
+                            Text("Norwegian")
+                            Text("Polish")
+                            Text("Portuguese")
+                            Text("Romanian")
+                            Text("Russian")
+                            Text("Slovak")
+                            Text("Slovenian")
+                            Text("Albanian")
+                            Text("Swedish")
+                        }
+                        Group {
+                            Text("Swahili")
+                            Text("Tamil")
+                            Text("Telugu")
+                            Text("Thai")
+                            Text("Tagalog")
+                            Text("Turkish")
+                            Text("Ukrainian")
+                            Text("Urdu")
+                            Text("Vietnamese")
+                            Text("Chinese")
+                        }
+                    }
+                    .padding()
+                }
+                .padding()
+                Spacer()
                 .navigationTitle("Translation")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -588,11 +675,13 @@ struct Translation: View {
                         }) {
                             Image(systemName: "play.fill")
                         }
+                        .help("Start Detection")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {hideKeyboard()}) {
                             Image(systemName: "keyboard.chevron.compact.down")
                         }
+                        .help("Hide Keyboard")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {let pasteboard = UIPasteboard.general
@@ -600,6 +689,7 @@ struct Translation: View {
                         }) {
                             Image(systemName: "doc.on.doc")
                         }
+                        .help("Copy Result")
                     }
                 }
             }
@@ -1520,7 +1610,7 @@ struct Translation: View {
                     }
                     .groupBoxStyle(BlueGroupBox())
                     .padding()
-                    .frame(minHeight: 0, maxHeight: 350)
+                    .frame(minHeight: 150, maxHeight: 350)
                 }
                 .navigationTitle("Translation")
                 .toolbar {
@@ -1542,11 +1632,13 @@ struct Translation: View {
                         }) {
                             Image(systemName: "play.fill")
                         }
+                        .help("Start Detection")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {hideKeyboard()}) {
                             Image(systemName: "keyboard.chevron.compact.down")
                         }
+                        .help("Hide Keyboard")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {let pasteboard = UIPasteboard.general
@@ -1554,9 +1646,97 @@ struct Translation: View {
                         }) {
                             Image(systemName: "doc.on.doc")
                         }
+                        .help("Copy Result")
                     }
                 }
         }
+                Spacer()
+                GroupBox {
+                    VStack {
+                        Group {
+                        HStack {
+                            Spacer()
+                            Text("Detectable Languages")
+                                .bold()
+                                .font(.title3)
+                                .padding()
+                            Spacer()
+                        }
+                            Text("Afrikaans")
+                            Text("Arabic")
+                            Text("Belarusian")
+                            Text("Bulgarian")
+                            Text("Bengali")
+                            Text("Catalan")
+                            Text("Czech")
+                            Text("Welsh")
+                            Text("Danish")
+                        }
+                            Group {
+                            Text("German")
+                            Text("Greek")
+                            Text("English")
+                                Text("Esperanto")
+                                Text("Spanish")
+                                Text("Estonian")
+                                Text("Persian")
+                                Text("Finnish")
+                                Text("French")
+                                Text("Irish")
+                            }
+                        Group {
+                                Text("Galician")
+                            Text("Gujarati")
+                            Text("Hebrew")
+                            Text("Hindi")
+                            Text("Croatian")
+                            Text("Haitian")
+                            Text("Hungarian")
+                            Text("Indonesian")
+                            Text("Icelandic")
+                            Text("Italian")
+                        }
+                        Group {
+                            Text("Japanese")
+                            Text("Georgian")
+                            Text("Kannada")
+                            Text("Korean")
+                            Text("Lithuanian")
+                            Text("Latvian")
+                            Text("Macedonian")
+                            Text("Marathi")
+                            Text("Malay")
+                            Text("Maltese")
+                        }
+                        Group {
+                            Text("Dutch")
+                            Text("Norwegian")
+                            Text("Polish")
+                            Text("Portuguese")
+                            Text("Romanian")
+                            Text("Russian")
+                            Text("Slovak")
+                            Text("Slovenian")
+                            Text("Albanian")
+                            Text("Swedish")
+                        }
+                        Group {
+                            Text("Swahili")
+                            Text("Tamil")
+                            Text("Telugu")
+                            Text("Thai")
+                            Text("Tagalog")
+                            Text("Turkish")
+                            Text("Ukrainian")
+                            Text("Urdu")
+                            Text("Vietnamese")
+                            Text("Chinese")
+                        }
+                    }
+                    .padding()
+                }
+                .padding()
+                Spacer()
         }
             .alert(isPresented: $showingDownloading) {
                 Alert(title: Text("Downloading And Translating"), message: Text("Downloading The Translation Model And Translating. Please Wait..."), dismissButton: .cancel() {print("Cancel")

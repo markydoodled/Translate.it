@@ -16,13 +16,13 @@ Stay Tuned...
 
 # Features
 - Text Language Detection
-- Text Translation
+- Text Translation (macOS Needs An Internet Connection To Translate)
 - Positivity Detection
 - Text Speech Classification
 - People, Places And Organistaion Detection
 
 # Features To Come
-- Smart Replies
+- Smart Replies (iOS Only)
 - A macOS App
 
 # Images

@@ -38,8 +38,27 @@ struct PeoplePlacesOrganisationDetection: View {
                     }
                     .groupBoxStyle(BlueGroupBox())
                     .padding()
-                    .frame(minHeight: 0, maxHeight: 350)
+                    .frame(minHeight: 150, maxHeight: 350)
                 }
+                Spacer()
+                GroupBox {
+                    VStack {
+                        HStack {
+                        Spacer()
+                        Text("Detectable Language Features")
+                            .bold()
+                            .font(.title3)
+                            .padding()
+                        Spacer()
+                    }
+                        Text("People's Names")
+                        Text("Place Names")
+                        Text("Name Of An Organization")
+                        }
+                    .padding()
+                }
+                .padding()
+                Spacer()
         }
                 .navigationTitle("People, Places And Organisation Detection")
                 .toolbar {
@@ -65,11 +84,13 @@ struct PeoplePlacesOrganisationDetection: View {
                                 }}) {
                             Image(systemName: "play.fill")
                         }
+                        .help("Start Detection")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {hideKeyboard()}) {
                             Image(systemName: "keyboard.chevron.compact.down")
                         }
+                        .help("Hide Keyboard")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {let pasteboard = UIPasteboard.general
@@ -77,6 +98,7 @@ struct PeoplePlacesOrganisationDetection: View {
                         }) {
                             Image(systemName: "doc.on.doc")
                         }
+                        .help("Copy Result")
                     }
                 }
         } else {
@@ -103,8 +125,27 @@ struct PeoplePlacesOrganisationDetection: View {
                 }
                 .groupBoxStyle(BlueGroupBox())
                 .padding()
-                .frame(minHeight: 0, maxHeight: 350)
+                .frame(minHeight: 150, maxHeight: 350)
             }
+                Spacer()
+                GroupBox {
+                    VStack {
+                    HStack {
+                        Spacer()
+                        Text("Detectable Language Features")
+                            .bold()
+                            .font(.title3)
+                            .padding()
+                        Spacer()
+                    }
+                        Text("People's Names")
+                        Text("Place Names")
+                        Text("Name Of An Organization")
+                        }
+                    .padding()
+                }
+                .padding()
+                Spacer()
         }
             .navigationTitle("People, Places And Organisation Detection")
             .toolbar {
@@ -130,11 +171,13 @@ struct PeoplePlacesOrganisationDetection: View {
                             }}) {
                         Image(systemName: "play.fill")
                     }
+                    .help("Start Detection")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {hideKeyboard()}) {
                         Image(systemName: "keyboard.chevron.compact.down")
                     }
+                    .help("Hide Keyboard")
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {let pasteboard = UIPasteboard.general
@@ -142,6 +185,7 @@ struct PeoplePlacesOrganisationDetection: View {
                     }) {
                         Image(systemName: "doc.on.doc")
                     }
+                    .help("Copy Result")
                 }
             }
         }

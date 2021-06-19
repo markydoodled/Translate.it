@@ -33,6 +33,90 @@ struct LanguageDetection: View {
                     }
                     .padding()
                 }
+                    Spacer()
+                    GroupBox {
+                        VStack {
+                            Group {
+                        HStack {
+                            Spacer()
+                            Text("Detectable Languages")
+                                .bold()
+                                .font(.title3)
+                                .padding()
+                            Spacer()
+                        }
+                            Text("Amharic")
+                            Text("Arabic")
+                            Text("Armenian")
+                            Text("Bengali")
+                            Text("Bulgarian")
+                            Text("Burmese")
+                            Text("Catalan")
+                            Text("Cherokee")
+                            Text("Croatian")
+                            }
+                            Group {
+                            Text("Czech")
+                            Text("Danish")
+                            Text("Dutch")
+                                Text("English")
+                                Text("Finnish")
+                                Text("French")
+                                Text("Georgian")
+                                Text("German")
+                                Text("Greek")
+                                Text("Gujarati")
+                            }
+                                Group {
+                                Text("Hebrew")
+                                    Text("Hindi")
+                                    Text("Hungarian")
+                                    Text("Icelandic")
+                                    Text("Indonesian")
+                                    Text("Italian")
+                                    Text("Japanese")
+                                    Text("Kannada")
+                                    Text("Khmer")
+                                    Text("Korean")
+                                }
+                            Group {
+                                    Text("Lao")
+                                Text("Malay")
+                                Text("Malayalam")
+                                Text("Marathi")
+                                Text("Mongolian")
+                                Text("Norwegian")
+                                Text("Oriya")
+                                Text("Persian")
+                                Text("Polish")
+                                Text("Portuguese")
+                            }
+                            Group {
+                                Text("Punjabi")
+                                Text("Romanian")
+                                Text("Russian")
+                                Text("Simplified Chinese")
+                                Text("Sinhalese")
+                                Text("Slovak")
+                                Text("Spanish")
+                                Text("Swedish")
+                                Text("Tamil")
+                                Text("Telugu")
+                            }
+                            Group {
+                                Text("Thai")
+                                Text("Tibetan")
+                                Text("Traditional Chinese")
+                                Text("Turkish")
+                                Text("Ukrainian")
+                                Text("Urdu")
+                                Text("Vietnamese")
+                            }
+                    }
+                        .padding()
+                    }
+                    .padding()
+                    Spacer()
             }
                 .navigationTitle("Language Detection")
                 .toolbar {
@@ -45,11 +129,13 @@ struct LanguageDetection: View {
                     }) {
                             Image(systemName: "play.fill")
                         }
+                        .help("Start Detection")
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {hideKeyboard()}) {
                             Image(systemName: "keyboard.chevron.compact.down")
                         }
+                        .help("Hide Keyboard")
                     }
                 }
             }
@@ -72,6 +158,90 @@ struct LanguageDetection: View {
             }
             .padding()
         }
+            Spacer()
+            GroupBox {
+                VStack {
+                    Group {
+                HStack {
+                    Spacer()
+                    Text("Detectable Languages")
+                        .bold()
+                        .font(.title3)
+                        .padding()
+                    Spacer()
+                }
+                    Text("Amharic")
+                    Text("Arabic")
+                    Text("Armenian")
+                    Text("Bengali")
+                    Text("Bulgarian")
+                    Text("Burmese")
+                    Text("Catalan")
+                    Text("Cherokee")
+                    Text("Croatian")
+                    }
+                    Group {
+                    Text("Czech")
+                    Text("Danish")
+                    Text("Dutch")
+                        Text("English")
+                        Text("Finnish")
+                        Text("French")
+                        Text("Georgian")
+                        Text("German")
+                        Text("Greek")
+                        Text("Gujarati")
+                    }
+                        Group {
+                        Text("Hebrew")
+                            Text("Hindi")
+                            Text("Hungarian")
+                            Text("Icelandic")
+                            Text("Indonesian")
+                            Text("Italian")
+                            Text("Japanese")
+                            Text("Kannada")
+                            Text("Khmer")
+                            Text("Korean")
+                        }
+                    Group {
+                            Text("Lao")
+                        Text("Malay")
+                        Text("Malayalam")
+                        Text("Marathi")
+                        Text("Mongolian")
+                        Text("Norwegian")
+                        Text("Oriya")
+                        Text("Persian")
+                        Text("Polish")
+                        Text("Portuguese")
+                    }
+                    Group {
+                        Text("Punjabi")
+                        Text("Romanian")
+                        Text("Russian")
+                        Text("Simplified Chinese")
+                        Text("Sinhalese")
+                        Text("Slovak")
+                        Text("Spanish")
+                        Text("Swedish")
+                        Text("Tamil")
+                        Text("Telugu")
+                    }
+                    Group {
+                        Text("Thai")
+                        Text("Tibetan")
+                        Text("Traditional Chinese")
+                        Text("Turkish")
+                        Text("Ukrainian")
+                        Text("Urdu")
+                        Text("Vietnamese")
+                    }
+            }
+                .padding()
+            }
+            .padding()
+            Spacer()
         }
         .navigationTitle("Language Detection")
         .toolbar {
@@ -84,11 +254,13 @@ struct LanguageDetection: View {
             }) {
                     Image(systemName: "play.fill")
                 }
+                .help("Start Detection")
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {hideKeyboard()}) {
                     Image(systemName: "keyboard.chevron.compact.down")
                 }
+                .help("Hide Keyboard")
             }
         }
         }

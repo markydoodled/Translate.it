@@ -38,7 +38,8 @@ struct ContentView: View {
                 ScrollView {
                     HStack {
                         Spacer()
-                VStack {
+                        VStack {
+                Group {
                 HStack {
                     NavigationLink(destination: PositivityDetection()) {
                         VStack {
@@ -86,6 +87,22 @@ struct ContentView: View {
                     .padding()
                     Spacer()
             }
+                            Group {
+                                    NavigationLink(destination: SmartReplys()) {
+                                        VStack {
+                                            Image(systemName: "arrowshape.turn.up.left.fill")
+                                                .foregroundColor(.white)
+                                                .font(.title)
+                                                .background(Rectangle().cornerRadius(10).frame(width: 60, height: 60))
+                                                .padding()
+                                            Text("Smart Reply")
+                                                .bold()
+                                                .foregroundColor(.primary)
+                                        }
+                                    }
+                                .padding()
+                            }
+                    }
                     Spacer()
                 }
             }
@@ -95,6 +112,7 @@ struct ContentView: View {
                         Button(action: {self.showingSettings = true}) {
                             Image(systemName: "gearshape")
                         }
+                        .help("Settings")
                         .sheet(isPresented: $showingSettings) {
                             NavigationView {
                                 Form {
@@ -107,12 +125,12 @@ struct ContentView: View {
                                         HStack {
                                            Text("Version")
                                             Spacer()
-                                            Text("1.0")
+                                            Text("1.1")
                                         }
                                         HStack {
                                             Text("Build")
                                             Spacer()
-                                            Text("1")
+                                            Text("3")
                                         }
                                     }
                                 }
@@ -140,20 +158,9 @@ struct ContentView: View {
         } else {
             NavigationView {
                 List {
-                    NavigationLink(destination: Translation()) {
-                        Label("Translation", systemImage: "rectangle.3.offgrid.bubble.left")
-                    }
-                    NavigationLink(destination: LanguageDetection()) {
-                        Label("Language", systemImage: "person")
-                    }
-                    NavigationLink(destination: PositivityDetection()) {
-                        Label("Positivity Detection", systemImage: "person.fill.checkmark")
-                    }
-                    NavigationLink(destination: PeoplePlacesOrganisationDetection()) {
-                        Label("People, Places And Organisation Detection", systemImage: "building.2.fill")
-                    }
-                    NavigationLink(destination: TextSpeechClassification()) {
-                        Label("Speech Classification", systemImage: "text.magnifyingglass")
+                       LandscapeNavigationView()
+                    NavigationLink(destination: SmartReplys()) {
+                        Label("Smart Reply", systemImage: "arrowshape.turn.up.left.fill")
                     }
                 }
                 .listStyle(SidebarListStyle())
@@ -163,9 +170,9 @@ struct ContentView: View {
                         Button(action: {self.showingSettings = true}) {
                             Image(systemName: "gearshape")
                         }
+                        .help("Settings")
                     }
                 }
-                
                 .sheet(isPresented: $showingSettings) {
                     NavigationView {
                     Form {
@@ -178,12 +185,12 @@ struct ContentView: View {
                             HStack {
                                Text("Version")
                                 Spacer()
-                                Text("1.0")
+                                Text("1.1")
                             }
                             HStack {
                                 Text("Build")
                                 Spacer()
-                                Text("1")
+                                Text("3")
                             }
                         }
                     }
@@ -1193,4 +1200,24 @@ struct ModelManage: View {
         }
     }
 }
+}
+
+struct LandscapeNavigationView: View {
+    var body: some View {
+        NavigationLink(destination: Translation()) {
+            Label("Translation", systemImage: "rectangle.3.offgrid.bubble.left")
+        }
+        NavigationLink(destination: LanguageDetection()) {
+            Label("Language", systemImage: "person")
+        }
+        NavigationLink(destination: PositivityDetection()) {
+            Label("Positivity Detection", systemImage: "person.fill.checkmark")
+        }
+        NavigationLink(destination: PeoplePlacesOrganisationDetection()) {
+            Label("People, Places And Organisation Detection", systemImage: "building.2.fill")
+        }
+        NavigationLink(destination: TextSpeechClassification()) {
+            Label("Speech Classification", systemImage: "text.magnifyingglass")
+        }
+    }
 }

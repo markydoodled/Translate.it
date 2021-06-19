@@ -3,12 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DEB5C6E45D13DA8073033B9 /* Pods_Translate_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBB50D57398DB705D4C1256 /* Pods_Translate_it.framework */; };
 		D531938826653479005A14CC /* PeoplePlacesOrganisationDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531938726653479005A14CC /* PeoplePlacesOrganisationDetection.swift */; };
+		D53BC1032675EF9500002AD7 /* Translate_it_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC1022675EF9500002AD7 /* Translate_it_macOSApp.swift */; };
+		D53BC1052675EF9500002AD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC1042675EF9500002AD7 /* ContentView.swift */; };
+		D53BC1072675EF9A00002AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53BC1062675EF9A00002AD7 /* Assets.xcassets */; };
+		D53BC10A2675EF9A00002AD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53BC1092675EF9A00002AD7 /* Preview Assets.xcassets */; };
+		D53BC1102675EFE900002AD7 /* PositivityDetection 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D55401492664C3E400FAF503 /* PositivityDetection 1.mlmodel */; };
+		D53BC1182676267E00002AD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC1172676248F00002AD7 /* SettingsView.swift */; };
+		D53BC1192676268400002AD7 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC11626760FA300002AD7 /* Translation.swift */; };
+		D53BC11B267627B100002AD7 /* LanguageDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC11A267627B100002AD7 /* LanguageDetection.swift */; };
+		D53BC11D267627C300002AD7 /* TextSpeechClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC11C267627C300002AD7 /* TextSpeechClassification.swift */; };
+		D53BC11F267627D900002AD7 /* PositivityDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC11E267627D900002AD7 /* PositivityDetection.swift */; };
+		D53BC121267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC120267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift */; };
+		D53BC12626764E3600002AD7 /* SmartReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC12426764E3200002AD7 /* SmartReply.swift */; };
+		D53CC44E2677FDB200A65E5A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */; };
 		D545285F2667BDE90080B35E /* TextSpeechClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545285E2667BDE90080B35E /* TextSpeechClassification.swift */; };
 		D549D08126601E1C00BEC18D /* Translate_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08026601E1C00BEC18D /* Translate_itApp.swift */; };
 		D549D08326601E1C00BEC18D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08226601E1C00BEC18D /* ContentView.swift */; };
@@ -19,14 +31,32 @@
 		D5D2C994266A702D00E3F53A /* LanguageDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2C993266A702D00E3F53A /* LanguageDetection.swift */; };
 		D5D2C996266A765D00E3F53A /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2C995266A765C00E3F53A /* Translation.swift */; };
 		D5F5FD8F2662B7350000C17A /* PositivityDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5FD8E2662B7350000C17A /* PositivityDetection.swift */; };
+		EA85115F538803E1C26F61A1 /* Pods_Translate_it_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87DCDEE98FE378B4A197C53 /* Pods_Translate_it_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33EE05F6F412D3EEBCD77822 /* Pods-Translate.it iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it iOS.debug.xcconfig"; path = "Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8FF87148FDCE07A4656893 /* Pods-Translate.it iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it iOS.release.xcconfig"; path = "Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4DE07418FCC97F015F68CBD7 /* Pods-Translate.it.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it.debug.xcconfig"; path = "Target Support Files/Pods-Translate.it/Pods-Translate.it.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEE6A324F93FE70405595C2 /* Pods-Translate.it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.it.release.xcconfig"; path = "Target Support Files/Pods-Translate.it/Pods-Translate.it.release.xcconfig"; sourceTree = "<group>"; };
 		D531938726653479005A14CC /* PeoplePlacesOrganisationDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePlacesOrganisationDetection.swift; sourceTree = "<group>"; };
+		D53BC1002675EF9500002AD7 /* Translate.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53BC1022675EF9500002AD7 /* Translate_it_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate_it_macOSApp.swift; sourceTree = "<group>"; };
+		D53BC1042675EF9500002AD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D53BC1062675EF9A00002AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D53BC1092675EF9A00002AD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D53BC10B2675EF9A00002AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53BC10C2675EF9A00002AD7 /* Translate_it_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Translate_it_macOS.entitlements; sourceTree = "<group>"; };
+		D53BC11626760FA300002AD7 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		D53BC1172676248F00002AD7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D53BC11A267627B100002AD7 /* LanguageDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetection.swift; sourceTree = "<group>"; };
+		D53BC11C267627C300002AD7 /* TextSpeechClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechClassification.swift; sourceTree = "<group>"; };
+		D53BC11E267627D900002AD7 /* PositivityDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositivityDetection.swift; sourceTree = "<group>"; };
+		D53BC120267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePlacesOrganisationDetection.swift; sourceTree = "<group>"; };
+		D53BC12426764E3200002AD7 /* SmartReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartReply.swift; sourceTree = "<group>"; };
+		D53CC4482677C2FF00A65E5A /* Pods_Translate_it.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Translate_it.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D545285E2667BDE90080B35E /* TextSpeechClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechClassification.swift; sourceTree = "<group>"; };
-		D549D07D26601E1C00BEC18D /* Translate.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D549D07D26601E1C00BEC18D /* Translate.it iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Translate.it iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D549D08026601E1C00BEC18D /* Translate_itApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate_itApp.swift; sourceTree = "<group>"; };
 		D549D08226601E1C00BEC18D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D549D08426601E1E00BEC18D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,25 +67,61 @@
 		D5D2C993266A702D00E3F53A /* LanguageDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetection.swift; sourceTree = "<group>"; };
 		D5D2C995266A765C00E3F53A /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		D5F5FD8E2662B7350000C17A /* PositivityDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositivityDetection.swift; sourceTree = "<group>"; };
-		DFBB50D57398DB705D4C1256 /* Pods_Translate_it.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Translate_it.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87DCDEE98FE378B4A197C53 /* Pods_Translate_it_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Translate_it_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D53BC0FD2675EF9500002AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53CC44E2677FDB200A65E5A /* BuildFile in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D549D07A26601E1B00BEC18D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DEB5C6E45D13DA8073033B9 /* Pods_Translate_it.framework in Frameworks */,
+				EA85115F538803E1C26F61A1 /* Pods_Translate_it_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53BC1012675EF9500002AD7 /* Translate.it macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D53BC1022675EF9500002AD7 /* Translate_it_macOSApp.swift */,
+				D53BC1042675EF9500002AD7 /* ContentView.swift */,
+				D53BC1062675EF9A00002AD7 /* Assets.xcassets */,
+				D53BC10B2675EF9A00002AD7 /* Info.plist */,
+				D53BC10C2675EF9A00002AD7 /* Translate_it_macOS.entitlements */,
+				D53BC1082675EF9A00002AD7 /* Preview Content */,
+				D53BC11626760FA300002AD7 /* Translation.swift */,
+				D53BC1172676248F00002AD7 /* SettingsView.swift */,
+				D53BC11A267627B100002AD7 /* LanguageDetection.swift */,
+				D53BC11C267627C300002AD7 /* TextSpeechClassification.swift */,
+				D53BC11E267627D900002AD7 /* PositivityDetection.swift */,
+				D53BC120267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift */,
+			);
+			path = "Translate.it macOS";
+			sourceTree = "<group>";
+		};
+		D53BC1082675EF9A00002AD7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D53BC1092675EF9A00002AD7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		D549D07426601E1B00BEC18D = {
 			isa = PBXGroup;
 			children = (
 				D549D07F26601E1C00BEC18D /* Translate.it */,
+				D53BC1012675EF9500002AD7 /* Translate.it macOS */,
 				D549D07E26601E1C00BEC18D /* Products */,
 				D57835F087EDC07E7431729B /* Pods */,
 				EEA3EB558D27563AB6F5E676 /* Frameworks */,
@@ -65,7 +131,8 @@
 		D549D07E26601E1C00BEC18D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D549D07D26601E1C00BEC18D /* Translate.it.app */,
+				D549D07D26601E1C00BEC18D /* Translate.it iOS.app */,
+				D53BC1002675EF9500002AD7 /* Translate.it.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +152,7 @@
 				D545285E2667BDE90080B35E /* TextSpeechClassification.swift */,
 				D5D2C993266A702D00E3F53A /* LanguageDetection.swift */,
 				D5D2C995266A765C00E3F53A /* Translation.swift */,
+				D53BC12426764E3200002AD7 /* SmartReply.swift */,
 			);
 			path = Translate.it;
 			sourceTree = "<group>";
@@ -102,6 +170,8 @@
 			children = (
 				4DE07418FCC97F015F68CBD7 /* Pods-Translate.it.debug.xcconfig */,
 				CDEE6A324F93FE70405595C2 /* Pods-Translate.it.release.xcconfig */,
+				33EE05F6F412D3EEBCD77822 /* Pods-Translate.it iOS.debug.xcconfig */,
+				3B8FF87148FDCE07A4656893 /* Pods-Translate.it iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,7 +179,8 @@
 		EEA3EB558D27563AB6F5E676 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFBB50D57398DB705D4C1256 /* Pods_Translate_it.framework */,
+				D53CC4482677C2FF00A65E5A /* Pods_Translate_it.framework */,
+				F87DCDEE98FE378B4A197C53 /* Pods_Translate_it_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,9 +188,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D549D07C26601E1B00BEC18D /* Translate.it */ = {
+		D53BC0FF2675EF9500002AD7 /* Translate.it */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D549D08C26601E1E00BEC18D /* Build configuration list for PBXNativeTarget "Translate.it" */;
+			buildConfigurationList = D53BC10D2675EF9A00002AD7 /* Build configuration list for PBXNativeTarget "Translate.it" */;
+			buildPhases = (
+				D53BC0FC2675EF9500002AD7 /* Sources */,
+				D53BC0FD2675EF9500002AD7 /* Frameworks */,
+				D53BC0FE2675EF9500002AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Translate.it;
+			packageProductDependencies = (
+				D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */,
+			);
+			productName = "Translate.it macOS";
+			productReference = D53BC1002675EF9500002AD7 /* Translate.it.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D549D07C26601E1B00BEC18D /* Translate.it iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D549D08C26601E1E00BEC18D /* Build configuration list for PBXNativeTarget "Translate.it iOS" */;
 			buildPhases = (
 				6B7493A24C5673183C4E6CC7 /* [CP] Check Pods Manifest.lock */,
 				D549D07926601E1B00BEC18D /* Sources */,
@@ -132,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = Translate.it;
+			name = "Translate.it iOS";
 			productName = Translate.it;
-			productReference = D549D07D26601E1C00BEC18D /* Translate.it.app */;
+			productReference = D549D07D26601E1C00BEC18D /* Translate.it iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,6 +237,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					D53BC0FF2675EF9500002AD7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					D549D07C26601E1B00BEC18D = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -160,16 +254,29 @@
 				Base,
 			);
 			mainGroup = D549D07426601E1B00BEC18D;
+			packageReferences = (
+				D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = D549D07E26601E1C00BEC18D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D549D07C26601E1B00BEC18D /* Translate.it */,
+				D549D07C26601E1B00BEC18D /* Translate.it iOS */,
+				D53BC0FF2675EF9500002AD7 /* Translate.it */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D53BC0FE2675EF9500002AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53BC10A2675EF9A00002AD7 /* Preview Assets.xcassets in Resources */,
+				D53BC1072675EF9A00002AD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D549D07B26601E1B00BEC18D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,15 +296,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		47C8690588D25D9F012ABF34 /* [CP] Embed Pods Frameworks */ = {
@@ -206,15 +313,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Translate.it/Pods-Translate.it-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Translate.it iOS/Pods-Translate.it iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6B7493A24C5673183C4E6CC7 /* [CP] Check Pods Manifest.lock */ = {
@@ -232,7 +339,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Translate.it-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Translate.it iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -242,6 +349,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D53BC0FC2675EF9500002AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53BC1052675EF9500002AD7 /* ContentView.swift in Sources */,
+				D53BC1182676267E00002AD7 /* SettingsView.swift in Sources */,
+				D53BC1102675EFE900002AD7 /* PositivityDetection 1.mlmodel in Sources */,
+				D53BC11B267627B100002AD7 /* LanguageDetection.swift in Sources */,
+				D53BC121267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift in Sources */,
+				D53BC1032675EF9500002AD7 /* Translate_it_macOSApp.swift in Sources */,
+				D53BC1192676268400002AD7 /* Translation.swift in Sources */,
+				D53BC11D267627C300002AD7 /* TextSpeechClassification.swift in Sources */,
+				D53BC11F267627D900002AD7 /* PositivityDetection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D549D07926601E1B00BEC18D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +373,7 @@
 				D549D08326601E1C00BEC18D /* ContentView.swift in Sources */,
 				D554014A2664C3E400FAF503 /* PositivityDetection 1.mlmodel in Sources */,
 				D5D2C996266A765D00E3F53A /* Translation.swift in Sources */,
+				D53BC12626764E3600002AD7 /* SmartReply.swift in Sources */,
 				D549D08126601E1C00BEC18D /* Translate_itApp.swift in Sources */,
 				D545285F2667BDE90080B35E /* TextSpeechClassification.swift in Sources */,
 				D5D2C994266A702D00E3F53A /* LanguageDetection.swift in Sources */,
@@ -260,6 +384,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D53BC10E2675EF9A00002AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Translate.it macOS/Translate_it_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Translate.it macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWASU9HFBU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Translate.it macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D53BC10F2675EF9A00002AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Translate.it macOS/Translate_it_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Translate.it macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZWASU9HFBU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Translate.it macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D549D08A26601E1E00BEC18D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,11 +556,12 @@
 		};
 		D549D08D26601E1E00BEC18D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DE07418FCC97F015F68CBD7 /* Pods-Translate.it.debug.xcconfig */;
+			baseConfigurationReference = 33EE05F6F412D3EEBCD77822 /* Pods-Translate.it iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_PREVIEWS = YES;
@@ -392,6 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -401,11 +581,12 @@
 		};
 		D549D08E26601E1E00BEC18D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDEE6A324F93FE70405595C2 /* Pods-Translate.it.release.xcconfig */;
+			baseConfigurationReference = 3B8FF87148FDCE07A4656893 /* Pods-Translate.it iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_PREVIEWS = YES;
@@ -415,6 +596,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -425,6 +607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D53BC10D2675EF9A00002AD7 /* Build configuration list for PBXNativeTarget "Translate.it" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53BC10E2675EF9A00002AD7 /* Debug */,
+				D53BC10F2675EF9A00002AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D549D07826601E1B00BEC18D /* Build configuration list for PBXProject "Translate.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -434,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D549D08C26601E1E00BEC18D /* Build configuration list for PBXNativeTarget "Translate.it" */ = {
+		D549D08C26601E1E00BEC18D /* Build configuration list for PBXNativeTarget "Translate.it iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D549D08D26601E1E00BEC18D /* Debug */,
@@ -444,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cpageler93/SwiftyTranslate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */;
+			productName = SwiftyTranslate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D549D07526601E1B00BEC18D /* Project object */;
 }

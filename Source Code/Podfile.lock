@@ -5,6 +5,9 @@ PODS:
     - PromisesObjC (~> 1.2)
   - GoogleMLKit/MLKitCore (2.1.0):
     - MLKitCommon (~> 2.1.0)
+  - GoogleMLKit/SmartReply (2.1.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitSmartReply (~> 1.2.0)
   - GoogleMLKit/Translate (2.1.0):
     - GoogleMLKit/MLKitCore
     - MLKitTranslate (~> 1.2.0)
@@ -40,6 +43,8 @@ PODS:
     - GoogleUtilitiesComponents (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.12)
+  - MLKitLanguageID (1.2.0):
+    - MLKitNaturalLanguage (~> 1.2)
   - MLKitNaturalLanguage (1.2.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
@@ -48,6 +53,9 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
     - MLKitCommon (~> 2.1)
     - Protobuf (~> 3.12)
+  - MLKitSmartReply (1.2.0):
+    - MLKitLanguageID (~> 1.2)
+    - MLKitNaturalLanguage (~> 1.2)
   - MLKitTranslate (1.2.0):
     - MLKitNaturalLanguage (~> 1.2)
     - SSZipArchive (~> 2.1)
@@ -61,6 +69,7 @@ PODS:
   - SSZipArchive (2.2.3)
 
 DEPENDENCIES:
+  - GoogleMLKit/SmartReply
   - GoogleMLKit/Translate
 
 SPEC REPOS:
@@ -72,7 +81,9 @@ SPEC REPOS:
     - GoogleUtilitiesComponents
     - GTMSessionFetcher
     - MLKitCommon
+    - MLKitLanguageID
     - MLKitNaturalLanguage
+    - MLKitSmartReply
     - MLKitTranslate
     - nanopb
     - PromisesObjC
@@ -87,13 +98,15 @@ SPEC CHECKSUMS:
   GoogleUtilitiesComponents: a69c0b3b369ba443e988141e75ef49d9010b1c80
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   MLKitCommon: 9ed187a042139d51c0d8bf6a8301bb20b375c576
+  MLKitLanguageID: ddb7a441d9076aabdd70e995b5276bc4c0687a8d
   MLKitNaturalLanguage: c98e5cc970834674d3a49fd4aa7129210e2dfe95
+  MLKitSmartReply: 75179268cc03004fc265ffeacb2d45de892c1efc
   MLKitTranslate: 605f83783276a73a8a6ca168e1e990f4e38b5493
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
 
-PODFILE CHECKSUM: c78460e98a88ce9b5f737808d15b2bbd6e97c523
+PODFILE CHECKSUM: fb56d4f7818f9bd2a136d82e8cc195f72caeb177
 
 COCOAPODS: 1.10.1
