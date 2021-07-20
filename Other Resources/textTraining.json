@@ -1,0 +1,122 @@
+[
+  {
+    "text": "fantastic"
+    "label": "Positive"
+  },
+  {
+    "text": "amazing"
+    "label": "Positive"
+  },
+  {
+    "text": "great"
+    "label": "Positive"
+  },
+  {
+    "text": "excellent"
+    "label": "Positive"
+  },
+  {
+    "text": "cool"
+    "label": "Positive"
+  },
+  {
+    "text": "not bad"
+    "label": "Positive"
+  },
+  {
+    "text": "good"
+    "label": "Positive"
+  },
+  {
+    "text": "super"
+    "label": "Positive"
+  },
+  {
+    "text": "brilliant"
+    "label": "Positive"
+  },
+  {
+    "text": "terrific"
+    "label": "Positive"
+  },
+  {
+    "text": "bad"
+    "label": "Negative"
+  },
+  {
+    "text": "not good"
+    "label": "Negative"
+  },
+  {
+    "text": "pathetic"
+    "label": "Negative"
+  },
+  {
+    "text": "unsatisfactory"
+    "label": "Negative"
+  },
+  {
+    "text": "inadequate"
+    "label": "Negative"
+  },
+  {
+    "text": "appalling"
+    "label": "Negative"
+  },
+  {
+    "text": "terrible"
+    "label": "Negative"
+  },
+  {
+    "text": "awful"
+    "label": "Negative"
+  },
+  {
+    "text": "dreadful"
+    "label": "Negative"
+  },
+  {
+    "text": "rotten"
+    "label": "Negative"
+  },
+  {
+    "text": "ok"
+    "label": "Neutral"
+  },
+  {
+    "text": "alright"
+    "label": "Neutral"
+  },
+  {
+    "text": "fine"
+    "label": "Neutral"
+  },
+  {
+    "text": "acceptable"
+    "label": "Neutral"
+  },
+  {
+    "text": "tolerable"
+    "label": "Neutral"
+  },
+  {
+    "text": "adequate"
+    "label": "Neutral"
+  },
+  {
+    "text": "decent"
+    "label": "Neutral"
+    },
+  {
+    "text": "fair"
+    "label": "Neutral"
+  },
+  {
+    "text": "reasonable"
+    "label": "Neutral"
+  },
+  {
+    "text": "average"
+    "label": "Neutral"
+  }
+]
