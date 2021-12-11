@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MLKitTranslate
+import MessageUI
 
 struct ContentView: View {
     init() {
@@ -15,6 +16,8 @@ struct ContentView: View {
     @State var tabSelection = 1
     @State var showingSettings = false
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @State var result: Result<MFMailComposeResult, Error>? = nil
+    @State var isShowingMailView = false
     var body: some View {
         if horizontalSizeClass == .compact {
         TabView(selection: $tabSelection) {
@@ -125,12 +128,22 @@ struct ContentView: View {
                                         HStack {
                                            Text("Version")
                                             Spacer()
-                                            Text("1.1")
+                                            Text("1.1.1")
                                         }
                                         HStack {
                                             Text("Build")
                                             Spacer()
-                                            Text("3")
+                                            Text("1")
+                                        }
+                                        HStack {
+                                            Text("Feedback")
+                                            Spacer()
+                                            Button(action: {self.isShowingMailView.toggle()}) {
+                                                Text("Send Feedback")
+                                            }
+                                            .sheet(isPresented: $isShowingMailView) {
+                                                MailView(isShowing: self.$isShowingMailView, result: self.$result)
+                                            }
                                         }
                                     }
                                 }
@@ -185,12 +198,22 @@ struct ContentView: View {
                             HStack {
                                Text("Version")
                                 Spacer()
-                                Text("1.1")
+                                Text("1.1.1")
                             }
                             HStack {
                                 Text("Build")
                                 Spacer()
-                                Text("3")
+                                Text("1")
+                            }
+                            HStack {
+                                Text("Feedback")
+                                Spacer()
+                                Button(action: {self.isShowingMailView.toggle()}) {
+                                    Text("Send Feedback")
+                                }
+                                .sheet(isPresented: $isShowingMailView) {
+                                    MailView(isShowing: self.$isShowingMailView, result: self.$result)
+                                }
                             }
                         }
                     }
@@ -1219,5 +1242,52 @@ struct LandscapeNavigationView: View {
         NavigationLink(destination: TextSpeechClassification()) {
             Label("Speech Classification", systemImage: "text.magnifyingglass")
         }
+    }
+}
+
+struct MailView: UIViewControllerRepresentable {
+
+    @Binding var isShowing: Bool
+    @Binding var result: Result<MFMailComposeResult, Error>?
+
+    class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
+
+        @Binding var isShowing: Bool
+        @Binding var result: Result<MFMailComposeResult, Error>?
+
+        init(isShowing: Binding<Bool>,
+             result: Binding<Result<MFMailComposeResult, Error>?>) {
+            _isShowing = isShowing
+            _result = result
+        }
+
+        func mailComposeController(_ controller: MFMailComposeViewController,
+                                   didFinishWith result: MFMailComposeResult,
+                                   error: Error?) {
+            defer {
+                isShowing = false
+            }
+            guard error == nil else {
+                self.result = .failure(error!)
+                return
+            }
+            self.result = .success(result)
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(isShowing: $isShowing,
+                           result: $result)
+    }
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
+        let vc = MFMailComposeViewController()
+        vc.mailComposeDelegate = context.coordinator
+        return vc
+    }
+
+    func updateUIViewController(_ uiViewController: MFMailComposeViewController,
+                                context: UIViewControllerRepresentableContext<MailView>) {
+
     }
 }

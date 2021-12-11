@@ -20,7 +20,7 @@
 		D53BC11F267627D900002AD7 /* PositivityDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC11E267627D900002AD7 /* PositivityDetection.swift */; };
 		D53BC121267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC120267627F500002AD7 /* PeoplePlacesOrganisationDetection.swift */; };
 		D53BC12626764E3600002AD7 /* SmartReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC12426764E3200002AD7 /* SmartReply.swift */; };
-		D53CC44E2677FDB200A65E5A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */; };
+		D53CC44E2677FDB200A65E5A /* SwiftyTranslate in Frameworks */ = {isa = PBXBuildFile; productRef = D53CC44D2677FDB200A65E5A /* SwiftyTranslate */; };
 		D545285F2667BDE90080B35E /* TextSpeechClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545285E2667BDE90080B35E /* TextSpeechClassification.swift */; };
 		D549D08126601E1C00BEC18D /* Translate_itApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08026601E1C00BEC18D /* Translate_itApp.swift */; };
 		D549D08326601E1C00BEC18D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549D08226601E1C00BEC18D /* ContentView.swift */; };
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CC44E2677FDB200A65E5A /* BuildFile in Frameworks */,
+				D53CC44E2677FDB200A65E5A /* SwiftyTranslate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +202,7 @@
 			);
 			name = Translate.it;
 			packageProductDependencies = (
-				D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */,
+				D53CC44D2677FDB200A65E5A /* SwiftyTranslate */,
 			);
 			productName = "Translate.it macOS";
 			productReference = D53BC1002675EF9500002AD7 /* Translate.it.app */;
@@ -235,7 +235,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					D53BC0FF2675EF9500002AD7 = {
 						CreatedOnToolsVersion = 12.5;
@@ -255,7 +255,7 @@
 			);
 			mainGroup = D549D07426601E1B00BEC18D;
 			packageReferences = (
-				D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */,
+				D53CC44C2677FDB200A65E5A /* XCRemoteSwiftPackageReference "SwiftyTranslate" */,
 			);
 			productRefGroup = D549D07E26601E1C00BEC18D /* Products */;
 			projectDirPath = "";
@@ -390,9 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Translate.it macOS/Translate_it_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it macOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -403,7 +404,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -417,9 +418,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Translate.it macOS/Translate_it_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it macOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -430,7 +432,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -561,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_PREVIEWS = YES;
@@ -571,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -586,7 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translate.it/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWASU9HFBU;
 				ENABLE_PREVIEWS = YES;
@@ -596,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MSJ.Translate-it";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -637,7 +639,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */ = {
+		D53CC44C2677FDB200A65E5A /* XCRemoteSwiftPackageReference "SwiftyTranslate" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cpageler93/SwiftyTranslate";
 			requirement = {
@@ -648,9 +650,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D53CC44D2677FDB200A65E5A /* SwiftPackageProductDependency */ = {
+		D53CC44D2677FDB200A65E5A /* SwiftyTranslate */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D53CC44C2677FDB200A65E5A /* RemoteSwiftPackageReference */;
+			package = D53CC44C2677FDB200A65E5A /* XCRemoteSwiftPackageReference "SwiftyTranslate" */;
 			productName = SwiftyTranslate;
 		};
 /* End XCSwiftPackageProductDependency section */
