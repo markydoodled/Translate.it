@@ -40,3 +40,4 @@ Any Suggestions?
 Thanks To These People Who Developed These Packages, Who Without This Project Would Not Be Possible:
 
 - cpageler93 [SwiftyTranslate](https://github.com/cpageler93/SwiftyTranslate)
+- Google [MLKit](https://developers.google.com/ml-kit)
