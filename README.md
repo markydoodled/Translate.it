@@ -23,7 +23,7 @@ pod install
 - Smart Replies (iOS Only)
 - A macOS App
 
-## **Features To Be Implatmented**
+## **Features To Be Implamented**
 Any Suggestions?
 
 ## **Images**
