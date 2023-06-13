@@ -24,6 +24,7 @@ pod install
 - Text Speech Classification
 - People, Places And Organistaion Detection
 - Smart Replies (iOS)
+- Feedback Button
 
 ## **Things To Note**
 
