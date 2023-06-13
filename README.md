@@ -16,13 +16,14 @@ pod install
 [Click Here...](https://github.com/markydoodled/Translate.it/releases)
 
 ## **Features**
+- macOS App
+- iOS App
 - Text Language Detection
 - Text Translation (macOS Needs An Internet Connection To Translate)
 - Positivity Detection
 - Text Speech Classification
 - People, Places And Organistaion Detection
 - Smart Replies (iOS)
-- macOS App
 
 ## **Things To Note**
 
